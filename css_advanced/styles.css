@@ -86,4 +86,58 @@ main section:first-of-type button {
   font-weight: bold;
   color: #555;
 }
+.videos {
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Or the real color from Figma */
+}
 
+.videos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.video-card {
+  background-color: white;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+}
+
+.video-card img {
+  width: 100%;
+  display: block;
+}
+
+.video-card h3 {
+  margin: 15px;
+  font-size: 1.2rem;
+}
+
+.video-card p {
+  margin: 0 15px 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.instructor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px;
+}
+
+.instructor img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
