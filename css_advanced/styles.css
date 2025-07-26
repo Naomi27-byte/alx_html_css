@@ -240,4 +240,40 @@ main section:first-of-type button {
   color: #555;
   line-height: 1.6;
 }
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
 
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffcc00; /* or any highlight color from Figma */
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
