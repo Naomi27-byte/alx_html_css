@@ -1,10 +1,56 @@
 /* 1. Make the <body> a flex container in column direction */
+/* change background and text */
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
+
+header {
+  background-color: #004466;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li.logo {
+  font-size: 2em;
+}
+
+/* Article content area */
+article {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
 
 /* 2. <main> is also a flex container in row direction */
 main {
@@ -32,7 +78,7 @@ aside {
 
 /* Optional: Styling for clarity */
 header, footer {
-  background-color: #f0f0f0;
-  padding: 1rem;
-  text-align: center;
+  background-color: #004466;
+  color: white;
+  padding: 20px;
 }
