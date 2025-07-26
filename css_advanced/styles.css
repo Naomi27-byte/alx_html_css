@@ -64,4 +64,26 @@ main section:first-of-type button {
   border-radius: 5px;
   cursor: pointer;
 }
+/* Quote Section */
+.quote {
+  background-color: #d9d9d9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quote blockquote {
+  font-size: 24px;
+  font-style: italic;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.quote footer {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
 
