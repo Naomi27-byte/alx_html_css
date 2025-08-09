@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+    <link rel="stylesheet" href="0-styles.css">
+</head>
+<body>
+
+    <!-- Header / Hero section -->
+    <header>
+        <nav>
+          <!-- Hamburger icon -->
+<div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+            <img src="images/logo.png" alt="Logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-links">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">What we do</a></li>
+    <li><a href="#">Our results</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+        <div class="hero">
+            <!-- WHAT WE DO -->
+<section class="what-we-do" id="what-we-do">
+  <div class="container">
+    <h2 class="section-title">What we do</h2>
+    <p class="section-lead">We make great sound, simple design and long battery life.</p>
+
+    <div class="services">
+      <article class="service-card">
+        <!-- Replace 'icon-example-1' with the real icon class from demo.html -->
+        <i class="icon icon-example-1" aria-hidden="true"></i>
+        <h3>Design</h3>
+        <p>Comfortable and stylish headphones.</p>
+      </article>
+
+      <article class="service-card">
+        <i class="icon icon-example-2" aria-hidden="true"></i>
+        <h3>Sound</h3>
+        <p>Rich bass and clear highs for all music.</p>
+      </article>
+
+      <article class="service-card">
+        <i class="icon icon-example-3" aria-hidden="true"></i>
+        <h3>Battery</h3>
+        <p>Play all day with long battery life.</p>
+      </article>
+
+      <article class="service-card">
+        <i class="icon icon-example-4" aria-hidden="true"></i>
+        <h3>Support</h3>
+        <p>We help you if something goes wrong.</p>
+      </article>
+    </div>
+  </div>
+</section><!-- CONTACT US -->
+<section id="contact-us" class="contact-us">
+  <div class="container">
+    <h2 class="section-title">Contact us</h2>
+    <p class="section-lead">Have a question or need help? Send us a message and we’ll reply soon.</p>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required minlength="2" placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" pattern="[0-9+\-\s()]{7,20}" placeholder="07123456789">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required placeholder="What is this about?">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Write your message..."></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Send message</button>
+        <button type="reset" class="btn btn-ghost">Reset</button>
+      </div>
+
+      <p class="form-success" role="status" aria-live="polite" hidden>Thanks! We got your message — we’ll contact you soon.</p>
+    </form>
+  </div>
+</section>
+
+<!-- small inline script to simulate submit (no server needed) -->
+<script>
+  (function () {
+    const form = document.getElementById('contactForm');
+    const success = document.querySelector('.form-success');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      // use browser built-in validation
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      // show success text and clear form
+      success.hidden = false;
+      form.reset();
+      // hide success after 4 seconds
+      setTimeout(() => { success.hidden = true; }, 4000);
+    }, false);
+  })();
+</script>
+<!-- OUR RESULTS -->
+<section class="our-results" id="our-results">
+  <div class="container">
+    <h2 class="section-title">Our results</h2>
+    <p class="section-lead">We make things people love. Numbers below tell the story.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">1M+</div>
+        <div class="stat-label">Happy users</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-number">4.9</div>
+        <div class="stat-label">Avg. rating</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Support</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-number">10+ hrs</div>
+        <div class="stat-label">Battery life</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+            <h1>Your Favorite Headphones</h1>
+            <p>Experience sound like never before.</p>
+            <button>Shop Now</button>
+        </div>
+    </header>
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col about">
+      <a class="logo" href="#"><img src="images/logo.png" alt="Logo" /></a>
+      <p class="small">Comfortable headphones made for music lovers. © <span id="year"></span></p>
+    </div>
+
+    <div class="footer-col links">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#what-we-do">What we do</a></li>
+        <li><a href="#our-results">Our results</a></li>
+        <li><a href="#contact-us">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col contact">
+      <h4>Contact</h4>
+      <p>📧 <a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p>📞 <a href="tel:+1234567890">+1 234 567 890</a></p>
+    </div>
+
+    <div class="footer-col newsletter">
+      <h4>Newsletter</h4>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks — subscribed!');">
+        <input type="email" placeholder="Your email" required />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="made-by">Made with ♥ — Built by you</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // small script to set the year in the footer
+  (function () {
+    const y = new Date().getFullYear();
+    const el = document.getElementById('year');
+    if (el) el.textContent = y;
+  })();
+</script>
+<!-- ===== end footer ===== -->
+</body>
+</html>
